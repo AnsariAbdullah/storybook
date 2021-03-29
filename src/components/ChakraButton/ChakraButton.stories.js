@@ -4,7 +4,10 @@ import { Button } from '@chakra-ui/core';
 export default {
 	title: 'Chakra/Button',
 	component: Button,
-	argTypes: { onClick: { action: 'clicked' } },
+	argTypes: {
+		onClick: { action: 'clicked' },
+		onMouseOver: {action: 'hovered'}
+	},
 }
 
 const Template = args => <Button {...args} />
@@ -18,5 +21,12 @@ Success.args = {
 export const Danger = Template.bind({})
 Danger.args = {
 	variantColor: 'red',
-	children: 'Danger'
+	children: 'Danger',
+	disabled: false
 }
+
+export const Log = () => (
+	<Button variantColor='blue' onClick={()=>console.log('Button clicked')}>
+		Log
+	</Button>
+)
