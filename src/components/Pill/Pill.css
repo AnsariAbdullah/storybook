@@ -1,0 +1,19 @@
+.pill{
+	display: inline-block;
+	text-align: center;
+	min-width: 40px;
+	font-size: 10px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	border-radius: 20px;
+}
+.primary{
+	background-color: #38a169;
+}
+.secondary{
+	background-color: #e53e3e;
+}
+.info{
+	background-color: #000;
+}
